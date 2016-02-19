@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Word Nauseam</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+  <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+  <link href='https://fonts.googleapis.com/css?family=Fredoka+One' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" type="text/css" href="index.css">
+  
+</head>
+
+
+<body>
+
+        <!-- Navigation -->
+    <nav class="navbar navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Jayson Coppo</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                
+                <ul class="nav navbar-nav navbar-right">
+     
+                    <li>
+                        <a href="#">Find Friends</a>
+                    </li>   
+                  
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Word Games<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#" onclick="setGame(1)">One By One</a>
+                            </li>
+                            <li>
+                                <a href="#" onclick="setGame(2)">Fill in Blanks</a>
+                            </li>
+                            
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#">[username]</a>
+                    </li>
+
+                </ul>
+
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+  <!-- First Container -->
+  <div id="main">
+
+      <div id="info-box" class="text-box">
+
+        <div id="username-box">
+          <p><img id="user-pic" src="http://www.stanford.edu/dept/CTL/cgi-bin/academicskillscoaching/wp-content/uploads/2012/07/baby-duck.jpg">[Username]</p>
+          <p id="points">Points: <span id="scoreNumber">0</span></p>
+        </div>
+
+        <div id="info-bottom">
+          Max Letters <input id="max-letters" type="number" step="1" value="8">
+          <br>
+          <div id="owned-words-div">
+            <p>Words You OWN</p>
+            <ul id="owned-words">
+            </ul>
+          </div>
+      
+        </div>
+
+      </div>
+
+      <div id="game-box">
+        <p id="message">Guess the word</p>
+        <div id="top-box" class="text-box word-box" onclick="changeText()"></div>
+        <br />
+        <input id="bottom-box" class="text-box word-box" type="text" value="" autocomplete="off">
+        <div id="new-game" class="text-box word-box">New Game</div>
+      </div>
+
+   </div>
+
+<script src="index.js"></script>
+
+
+
+</script>
+
+</body>
+</html>
+
+
+
+
